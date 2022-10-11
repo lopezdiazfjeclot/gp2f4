@@ -30,10 +30,15 @@
 
             #Máscara de subxarxa
             $subnetMask = $sub->getSubnetMask();        // 255.255.254.0
-            echo "La màscara de subxarxa es $subnetMask<br><br>";
+            echo "La màscara de subxarxa és $subnetMask<br><br>";
+
             #Broadcast
+			$broadcastAddress = $sub->getBroadcastAddress();
+			echo "El broadcast és $broadcastAddress<br><br>";
+			
             #Rango de IP
-            
+            $addressableHostRange  = $sub->getAddressableHostRange();
+			echo "Els rangs són ".$addressableHostRange[0]." fins a ".$addressableHostRange[1]."<br><br>";
 
 		
 		?>
