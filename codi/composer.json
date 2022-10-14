@@ -1,5 +1,5 @@
 {
     "require": {
-        "markrogoyski/ipv4-subnet-calculator": "4.*"
+        "markrogoyski/ipv4-subnet-calculator": "^4.0"
     }
 }

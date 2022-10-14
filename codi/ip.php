@@ -26,7 +26,7 @@
 
             #Adreça de subxarxa
             $ipAddress = $sub->getIPAddress();        // 192.168.112.203
-            echo "L'adreça IP és $ipAddress<br><br>";
+            echo "L'adreça IP és $ipAddress/".$operand2."<br><br>";
 
             #Máscara de subxarxa
             $subnetMask = $sub->getSubnetMask();        // 255.255.254.0
@@ -38,7 +38,7 @@
 			
             #Rango de IP
             $addressableHostRange  = $sub->getAddressableHostRange();
-			echo "Els rangs són ".$addressableHostRange[0]." fins a ".$addressableHostRange[1]."<br><br>";
+			echo "Els rangs són ".$addressableHostRange[0]."/".$operand2." fins a ".$addressableHostRange[1]."/".$operand2."<br><br>";
 
 		
 		?>
